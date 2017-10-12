@@ -1,8 +1,11 @@
 cmake_minimum_required(VERSION 2.6 FATAL_ERROR)
 
-set (CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 11)
 
 project(trc2root)
+
+list(APPEND CMAKE_PREFIX_PATH $/home/ide/PROGS/root-6.10.06-install/)
+
 find_package(ROOT REQUIRED)
 
 include_directories(${ROOT_INCLUDE_DIRS})

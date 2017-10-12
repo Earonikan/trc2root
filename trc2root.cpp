@@ -1,19 +1,5 @@
 #include <string>
-#include <stdlib.h>
-#include <stdio.h>
-#include <iostream> 
-#include <cstdio>
-#include <cstdlib>
-#include <fstream>
-#include <math.h>
 #include <cstring>
-#include <string.h>
-#include <sstream>
-#include <iomanip>
-#include <stdlib.h>
-#include <ctime>
-#include <dirent.h>
-
 
 #include "TRint.h"
 #include "TROOT.h"
@@ -28,7 +14,7 @@ int main(int argc, char *argv[]) {// -a/-b ./folder/filename number_of_events nu
 	
 	bool binary_mode = true;
 	char data_type;
-	int number_of_events = atof(argv[3]);
+	int number_of_events = atoi(argv[3]);
 	//int number_of_voltages = atof(argv[3]);
 		
 	// here we check the type of data
