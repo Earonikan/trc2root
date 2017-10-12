@@ -6,12 +6,6 @@ void ReadString(char str1[],char *Addr) {
 	
 }
 
-void ReadWord(int8_t *ans, char *Addr) {
-	
-	*ans = *(int8_t*)(Addr);
-		
-}
-
 void ReadWord(int16_t *ans, char *Addr) {
 	
 	*ans = *(int16_t*)(Addr);

@@ -39,12 +39,12 @@ int main(int argc, char *argv[]) {// -a/-b ./folder/filename number_of_events nu
 	// here we obtain the number of channels
 	const int number_of_channels = argc-4;
 	int channels[number_of_channels];
-	for (int i=0;i<number_of_channels;i++) channels[i] = atof(argv[4+i]);
+	for (int i=0;i<number_of_channels;i++) channels[i] = atoi(argv[4+i]);
 	
 	// here we obtain the start event
 	char n_start_str[6];
 	for (int i=0;i<5;i++) n_start_str[i]=*(filename_in+l0+i);
-	int n_start=atof(n_start_str);
+	int n_start=atoi(n_start_str);
 	
 	// here we obtain the info about the waveform		
 	int32_t number_of_points = readinfo_b(filename_in);
